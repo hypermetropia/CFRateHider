@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Rating Hider",
+  "version": "1.0.0",
+  "description": "Hides your rating and color from Codeforces until you become Specialist.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://codeforces.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://codeforces.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
